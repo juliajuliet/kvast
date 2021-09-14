@@ -1,0 +1,812 @@
+body {
+    min-width: 1040px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "Arial", sans-serif;
+    color: #404040;
+    font-style: normal;
+    background-color:white;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*шапка*/
+.header {
+    height: 490px;
+    background: url('kvast-images/img/wheat-back.jpg') no-repeat bottom;
+    background-size: cover;
+    padding-top: 60px;
+    background-color: #7a5118;
+}
+
+.header-top {
+    margin-bottom: 120px;
+}
+
+.logo {
+    float: left;
+    height: 76px;
+    width: 140px;
+    
+}
+
+.navigation {
+    float: right;
+    width: 600px;
+    list-style: none;
+    font-family: "Ariel", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navigation li {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: middle;
+}
+
+.navigation li:last-child {
+    margin-right: 0;
+}
+
+.navigation li a {
+    display: inline-block;
+    padding-top: 14px;
+    padding-bottom: 13px;
+
+    font-weight: bold;
+    vertical-align: middle;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.promo {
+    text-align: center;
+    font-size: 70px;
+    line-height: 70px;
+    color: white;
+    font-family: "Ariel", sans-serif;
+    font-weight: bold;
+}
+
+/*новинки*/
+.new-items {
+    padding-top: 80px;
+    padding-bottom: 110px;
+    background-color: #ffffff;
+}
+
+.new-header {
+    position: relative;
+    color: black;
+    font-size: 40px;   
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: "Ariel", sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.items {
+    margin-top: 75px;
+}
+.item {
+    width: 334px;
+    float: left;
+    position: relative;
+    padding-right: 30px;
+    padding-left: 34px;
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+}
+
+.item:nth-child(2n) {
+    border-left: none;
+}
+
+.item h3 {
+    position: relative;
+    margin: 0;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: "Ariel", sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.item img{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.item-info {
+    position: absolute;
+    top: 85px;
+    right: 0;
+    width: 150px;
+    padding-right: 25px;
+}
+
+.table {
+    width: 150px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    border-collapse: collapse;
+}
+
+.table td {
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.item-info .content {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Ariel", sans-serif;
+    color: #404040;
+}
+
+.description {
+    color: #404040;
+    font-family: "Arial", sans-serif;
+    line-height: 30px;
+    width: 330px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    font: inherit;
+    font-weight: bold;
+    line-height: inherit;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.buttons {
+    font-size: 0;
+}
+
+.buttons a {
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Ariel", sans-serif;
+    font-weight: bold;
+}
+
+.more {
+    border: 2px solid #834600;
+    color: #834600;
+    margin-right: 7px;
+}
+
+.buy {
+    border: 2px solid #834600;
+    color: white;
+    background-color: #834600;
+}
+
+.price {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 16px;
+    vertical-align: middle;
+    font-family: "Ariel", sans-serif;
+    font-weight: bold;
+}
+
+/*фишки*/
+.features {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  
+    background-color: #ffcb78;
+}
+
+.features .container {
+    width: 1015px;
+}
+
+.features ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.feature {
+    position: relative;
+    float: left;
+    width: 210px;
+    padding-right: 95px;
+    padding-left: 95px;
+    border-right: 1px solid #e5b66c;
+}
+
+.feature:first-child {
+    padding-left: 0;
+}
+
+.feature:last-child {
+    padding-right: 0;
+    border-right-color: transparent;
+}
+
+.feature::before {
+    content: "";
+    position: absolute;
+}
+
+.first-feature::before {
+    background-image: url('../htmlacademy/kvast-images/img/icon-brew.png');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 68px;
+}
+
+.second-feature::before {
+    background-image: url('../htmlacademy/kvast-images/img/icon-matreshka.png');
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 65px;
+}
+
+.third-feature::before {
+    background-image: url('../htmlacademy/kvast-images/img/icon-thumbsup.png');
+    background-repeat: no-repeat;
+    width: 63px;
+    height: 58px;
+}
+
+.feature-title {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-family: 'Ariel', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.feature-description {
+    margin: 0;
+    font-family: 'Ariel', sans-serif;
+    color: #404040;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/*немного истории*/
+.about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #ffffff;
+}
+
+.about-title {
+    font-size: 40px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Arial";
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 60px;
+}
+
+.story {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+dt {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Arial";
+    font-weight: bold;    
+    text-transform: uppercase;
+}
+
+.i {
+    float: right;
+    text-decoration: none;
+    text-transform: none;
+    font-family: 'Ariel', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+    width: 196px;
+}
+
+dt a {
+    color: #834700;
+    font-size: 16px;
+    font-family: 'Ariel', sans-serif;
+    font-style: italic;
+}
+
+dd {
+    margin-left: 0;
+}
+
+.story-description p {
+    width: 490px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #404040;
+    font-family: "Arial";
+    float: left;
+    margin: 0;
+}
+
+dl img {
+    float: right;
+    width: 200px;
+    margin-top: 10px;
+}
+
+/*пресса*/
+.newspaper {
+    background-color: #ede4d7;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.newspaper-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 75px;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Arial";
+    text-transform: uppercase;
+}
+
+.quote {
+    margin: 0;
+    position: relative;
+}
+
+.quote::before {
+    content: "";
+    position: absolute;
+    width: 41px;
+    height: 31px;
+    left: -105px;
+    top: 5px;
+    background: url('C:/Users/ulyaj/Desktop/work/portfolio/htmlacademy/kvast-images/img/quotes.png');
+    background-repeat: no-repeat;
+}
+
+.quote p {
+    margin-bottom: 35px;
+    width: 690px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #404040;
+    font-family: "Arial";
+}
+
+cite {
+    width: 330px;
+    float: right;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Arial";
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.quote-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    color: #bcb6ab;
+    border: 2px solid #a5a097;
+    font: inherit;
+    font-weight: bold;
+    line-height: inherit;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*ассортимент*/
+.stock {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: white;
+}
+
+.stock-title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Arial";
+    text-transform: uppercase;
+    margin-bottom: 75px;
+}
+
+.stock-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.stock-table th {
+    font-size: 11px;
+    color: #999999;
+    font-family: "Arial";
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.stock-table td {
+    padding: 17px 0;
+}
+
+.stock-table th,
+.stock-table td {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.stock-table .product {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Arial";
+    text-transform: uppercase;
+    width: 400px;
+}
+
+.stock-table .th {
+    font-size: 11px;
+    color: #999999;
+    font-family: "Arial";
+    text-align: left;
+}
+
+.alc {
+    width: 90px;
+}
+  
+.cal {
+    width: 60px;
+}
+  
+.vol {
+    text-transform: uppercase;
+}
+  
+th.cost,
+td.cost {
+    text-align: right;
+}
+
+.stock-table sup {
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    font-size: 8px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: "Arial";
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 2px 5px;
+}
+
+/*форма*/
+.order {
+    background-color: #ffca78;
+    color: black;
+    padding-top: 80px;
+    padding-bottom: 110px;
+}
+
+.order-title {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Arial";
+    text-transform: uppercase;
+    margin-bottom: 75px;
+}
+
+.order p {
+    margin: 0;
+    margin-bottom: 70px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #404040;
+    font-family: "Arial";
+    width: 660px;
+}
+
+.order form {
+    margin: 0;
+    padding: 0;
+    width: 630px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Arial";
+    text-transform: uppercase;
+}
+
+.form-group input[type="text"], textarea {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 15px 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #b69054;
+    text-transform: uppercase;
+}
+
+.form-group-left {
+    float: left;
+    width: 290px;
+}
+
+.form-group-right {
+    float: right;
+    width: 290px;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.check-area {
+    margin-bottom: 40px;
+}
+
+.check-area input {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.check-area label {
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: middle;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.form-group input[type="submit"] {
+    display: inline-block;
+    padding: 8px 20px;
+    font: inherit;
+    font-weight: bold;
+    line-height: inherit;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #834700;
+    border: 2px solid #834700;
+}
+
+/*подвал*/
+.footer {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    background-color: #000000;
+    color: white;
+}
+
+.footer .container {
+    width: 1015px;
+}
+
+.footer .logo {
+    margin-left: 37px;
+    width: 140px;
+    height: 76px;
+    float: left;
+}
+
+.footer .navigation {
+    list-style: none;
+    font-family: "Ariel", sans-serif;
+    font-weight: bold;
+    float: right;
+    width: 600px;
+    margin: 0;
+    margin-top: 7px;
+    padding: 0;
+    margin-right: 107px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer .navigation li {
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: middle;
+}
+
+.footer .navigation li:last-child {
+    margin-right: 0;
+}
+
+.footer .navigation li a {
+    text-decoration: none;
+    font-family: "Ariel-BoldMT", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+}
+
+.footer-social {
+    margin-top: 47px;
+}
+
+.contacts {
+    width: 216px;
+    float: left;
+}
+
+.contacts a {
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 66px;
+    margin-left: -1px;
+    font-size: 0;
+    background-color: #1b1b1b;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid rgba(255, 203, 120, 0.1);
+}
+
+.contacts .inst {
+    background-image: url('../htmlacademy/kvast-images/img/icon-insta.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.contacts .fb {
+    background-image: url('../htmlacademy/kvast-images/img/icon-fb.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.contacts .vk {
+    background-image: url('../htmlacademy/kvast-images/img/icon-vk.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.footer-social p {
+    margin: 0;
+    margin-top: 12px;
+    margin-left: 91px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #989898;
+    font-family: "Arial";
+    width: 200px;
+    float: left;
+}
+
+.footer-social .copyright {
+    float: left;
+    width: 300px;
+    margin-left: 200px;
+    font-size: 0;
+}
+
+.footer-social .copyright a {
+    color: #989898;
+    text-decoration: none;
+}
+
+.footer-social .logo-htmlacademy {
+    position: relative;
+
+    display: inline-block;
+    width: 70px;
+    height: 66px;
+
+    vertical-align: top;
+
+    background-color: #1b1b1b;
+    border: 1px solid rgba(255, 203, 120, 0.1);
+}
+
+.footer-social .logo-htmlacademy img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+    margin: auto;
+}
+
+.copyright span {
+    display: inline-block;
+  
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+    color: #989898;
+  }
+
+.copyright a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+.copyright-text {
+    margin-top: 25px;
+    margin-left: 30px;
+    text-decoration: none;
+  }
